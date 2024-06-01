@@ -1,0 +1,55 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .header nav ul li a,
+  .header nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .header nav ul li a:hover,
+  .header nav ul li button:hover {
+    background-color: #333;
+  }
+  
+  .message-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1001;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  

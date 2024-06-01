@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Netflix Clone</div>
+      <div className="logo">Netflix</div>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>

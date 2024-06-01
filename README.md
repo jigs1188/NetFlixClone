@@ -165,11 +165,5 @@ Contributions are welcome! Please open an issue or submit a pull request if you 
 ## License
 
 This project is licensed under the MIT License.
-```
-
-### Instructions for Uploading the README
-
-1. Save the above content into a file named `README.md`.
-2. Place the `README.md` file at the root of your `netflix` directory.
 
 This README file will provide clear instructions and information about your project, making it easier for others to understand and contribute to it. If you have any more requests or need further assistance, feel free to ask!

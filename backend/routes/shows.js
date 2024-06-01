@@ -15,6 +15,7 @@ const shows = [
 ];
 
 router.get('/', (req, res) => {
+  
   res.json(shows);
 });
 

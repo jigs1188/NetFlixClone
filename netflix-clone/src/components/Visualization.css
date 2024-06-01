@@ -1,0 +1,19 @@
+/* src/components/Visualization.css */
+.visualization {
+    padding: 20px;
+  }
+  
+  .visualization h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+    margin-bottom: 30px;
+  }
+  
+  .chart-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  

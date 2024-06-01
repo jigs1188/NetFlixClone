@@ -7,6 +7,7 @@ import Register from './components/Register';
 import Home from './components/Home';
 import UserProfile from './components/UserProfile';
 import VideoPlayer from './components/VideoPlayer';
+import Visualization from './components/Visualization';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/register" element={<Register />} />
             <Route path="/profile" element={<UserProfile />} />
             <Route path="/watch" element={<VideoPlayer />} />
+            <Route path="/visualization" element={<Visualization />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </div>

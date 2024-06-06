@@ -10,7 +10,9 @@ const Visualization = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      console.log('Fetching data...');
       const response = await fetch('https://raw.githubusercontent.com/datasets/awesome-data/master/data/netflix_titles.csv');
+      console.log('Data fetched:', response); // Log the response
       const reader = response.body.getReader();
       const result = await reader.read();
       const decoder = new TextDecoder('utf-8');

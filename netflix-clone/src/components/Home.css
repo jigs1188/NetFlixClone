@@ -1,0 +1,11 @@
+/* src/components/Home.css */
+.home {
+    padding: 20px;
+  }
+  
+  .home__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  

@@ -1,0 +1,49 @@
+.visualization-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #141414;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #E50914; /* Netflix red */
+}
+
+.chart-container {
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #221f1f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-container h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #E50914; /* Netflix red */
+}
+
+.chart-container canvas {
+  max-height: 100%;
+}
+
+.loading-container, .error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  font-size: 18px;
+}

@@ -1,3 +1,4 @@
+// src/components/MovieRow.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MovieRow.css';

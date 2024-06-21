@@ -1,7 +1,9 @@
 /* src/components/VideoPlayer.css */
 .video-player {
-    width: 97%;
-    height: 97vh;
+  margin-left: 1%;
+    width: 95%;
+
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -26,6 +26,7 @@ const MovieRow = ({ title, items }) => {
               alt={item.title}
             />
             <div className="movie-row__overlay">
+              <h3>{item.title}</h3> <br />
               <button className="movie-row__play-button">Play</button>
             </div>
           </div>

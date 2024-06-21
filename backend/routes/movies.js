@@ -3,15 +3,16 @@ const express = require('express');
 const router = express.Router();
 
 const movies = [
-  { id: 1, title: 'Tarot', posterUrl: "https://img.goku.sx/xxrz/250x400/576/2f/79/2f79ebeecb03b392627dab6b2f70bc4e/2f79ebeecb03b392627dab6b2f70bc4e.jpg",VideoUrl:"https://youtu.be/fG8nF53ceQc" },
-  { id: 2, title: 'Movie 2', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/c4/33/c4331df0660bc6e832452094a36c5d53/c4331df0660bc6e832452094a36c5d53.jpg',VideoUrl:"https://goku.sx/watch-movie/watch-furiosa-a-mad-max-saga-109111/1442653" },
-  { id: 3, title: 'Movie 3', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/17/48/174861588d88bdff39ce52ed13c1dc4c/174861588d88bdff39ce52ed13c1dc4c.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
-  { id: 4, title: 'Movie 4', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/29/32/293217609b7bdf410b1d287b96bef12a/293217609b7bdf410b1d287b96bef12a.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
-  { id: 5, title: 'Movie 5', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/27/f3/27f3354bd7d6505d92ac8aadfff3280e/27f3354bd7d6505d92ac8aadfff3280e.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
-  { id: 6, title: 'Movie 6', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/9d/e2/9de27aa84a87d97a8aaa7296cd759122/9de27aa84a87d97a8aaa7296cd759122.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
-  { id: 7, title: 'Movie 7', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/11/3d/113da32063078e9747a8a4ec1f5b2b3c/113da32063078e9747a8a4ec1f5b2b3c.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
-  { id: 8, title: 'Movie 8', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/db/10/db10820a0dd20ada5d02c2a77f22c6da/db10820a0dd20ada5d02c2a77f22c6da.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
-  { id: 9, title: 'Movie 9', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/35/a5/35a539a691894ad48432d70dd1171801/35a539a691894ad48432d70dd1171801.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 1, title: 'Bird Box', posterUrl: "https://m.media-amazon.com/images/M/MV5BNjk5ZTk5NTAtYTQ4MS00NWI2LTg2NzQtZTBhYmEzOWU3MDQ0XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",VideoUrl:"https://youtu.be/o2AsIXSh2xo" },
+  { id: 2, title: 'Extraction', posterUrl: 'https://ourmuchnessguide.com/wp-content/uploads/2020/07/netflix-extraction-pinterest.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 3, title: 'The Irihman', posterUrl: 'https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_FMjpg_UX1000_.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 4, title: 'To all the boys I\'ve loved before', posterUrl: 'https://m.media-amazon.com/images/I/71KRISpGfZL._AC_UF1000,1000_QL80_.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 5, title: 'The Old guard', posterUrl: 'https://m.media-amazon.com/images/M/MV5BZTY5YTk0ZDMtODg0Zi00OGM4LTgxMTQtODAzODg2ZjE2MmM1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 6, title: '6 Underground', posterUrl: 'https://m.media-amazon.com/images/M/MV5BNzE2ZjQxNjEtNmI2ZS00ZmU0LTg4M2YtYzVhYmRiYWU0YzI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 7, title: 'Enola Holmes', posterUrl: 'https://m.media-amazon.com/images/M/MV5BZjNkNzk0ZjEtM2M1ZC00MmMxLTlmOWEtNWRlZTc1ZTUyNzY4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 8, title: 'Project Power', posterUrl: 'https://m.media-amazon.com/images/M/MV5BYzBhOWU4ODAtZDYzYi00NDU1LWIzZWUtNDZmMDgxODljZTVmXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 9, title: 'The kissing booth', posterUrl: 'https://m.media-amazon.com/images/M/MV5BNjQ0Mzk0OTE5MF5BMl5BanBnXkFtZTgwNDkyOTI0NTM@._V1_.jpg',VideoUrl:"https://www.youtube.com/watch?v=174861588d88bdff39ce52ed13c1dc4c" },
+  { id: 1, title: 'Tarot', posterUrl: "https://img.goku.sx/xxrz/250x400/576/2f/79/2f79ebeecb03b392627dab6b2f70bc4e/2f79ebeecb03b392627dab6b2f70bc4e.jpg", videoUrl: "https://www.youtube.com/watch?v=xyz" },
   // Add more movies here
 ];
 
@@ -20,3 +21,5 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
+
+

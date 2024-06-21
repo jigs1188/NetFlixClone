@@ -11,9 +11,12 @@ const VideoPlayer = () => {
 
   return (
     <div className="video-player">
-      <ReactPlayer url={videoUrl} controls width="100%" height="100%" />
-    </div>
-  );
+    {videoUrl ? (
+        <ReactPlayer url={videoUrl} controls width="100%" height="100%" />
+      ) : (
+        <p>Invalid video URL</p>
+      )}    </div>
+    );
 };
 
 export default VideoPlayer;

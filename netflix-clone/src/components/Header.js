@@ -11,7 +11,6 @@ const Header = () => {
   const handleLogout = () => {
     dispatch({ type: 'LOGOUT' });
   };
-
   useEffect(() => {
     if (state.message) {
       setShowMessage(true);
@@ -28,6 +27,7 @@ const Header = () => {
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
+
           <li><Link to="/visualization-page">Visualization</Link></li>
           {state.isAuthenticated ? (
             <>

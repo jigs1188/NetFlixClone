@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Header />
+      {/* <Header /> */}
       <div className="home__content">
         {movies.length > 0 && <MovieRow title="Movies" items={movies} />}
         {shows.length > 0 && <MovieRow title="TV Shows" items={shows} />}

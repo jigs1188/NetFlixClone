@@ -3,14 +3,16 @@ const express = require('express');
 const router = express.Router();
 
 const shows = [
-  { id: 1, title: 'Show 1', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/c6/7b/c67ba0b941ad8ecc14ae9ea5f55f60bb/c67ba0b941ad8ecc14ae9ea5f55f60bb.jpg',VideoUrl:'' },
-  { id: 2, title: 'Show 2', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/86/14/861420950a66ce2dffb1104e0bf24039/861420950a66ce2dffb1104e0bf24039.jpg',VideoUrl:'' },
-  { id: 3, title: 'Show 3', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/62/ce/62ced9a7bae6c17904a9b3e7e4f973c8/62ced9a7bae6c17904a9b3e7e4f973c8.jpg',VideoUrl:'' },
-  { id: 4, title: 'Show 4', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/77/97/77970b42ee34d9ba921c61a1f291a9ba/77970b42ee34d9ba921c61a1f291a9ba.jpg',VideoUrl:'' },
-  { id: 5, title: 'Show 5', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/8e/cd/8ecda10e7b637147fb0cac4112d80b9e/8ecda10e7b637147fb0cac4112d80b9e.jpg',VideoUrl:'' },
-  { id: 6, title: 'Show 6', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/b4/09/b40905910ce58a8a49fc17af13696728/b40905910ce58a8a49fc17af13696728.jpg',VideoUrl:'' },
-  { id: 7, title: 'Show 7', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/2d/7b/2d7bf31874564e747a53077577598df9/2d7bf31874564e747a53077577598df9.jpg',VideoUrl:'' },
-  { id: 8, title: 'Show 8', posterUrl: 'https://img.goku.sx/xxrz/250x400/576/bb/9a/bb9a8fc97651fd904aae5d54225e4e6c/bb9a8fc97651fd904aae5d54225e4e6c.jpg',VideoUrl:'' },
+  { id: 1, title: 'Stranger Things ', posterUrl: 'https://people.com/thmb/3pq-PIWD_dfGwKfkcwQ9hXMYnhE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(515x809:517x811)/stranger-things-2-ba4b0d54a0d146e4a715cec0a7a29976.jpg',VideoUrl:'' },
+  { id: 2, title: 'The Witcher  ', posterUrl: 'https://br.web.img3.acsta.net/pictures/19/11/29/17/57/5161763.jpg',VideoUrl:'' },
+  { id: 3, title: 'Money Heist', posterUrl: 'https://resizing.flixster.com/ITt1FPrFePNR6FSqZrZK7BocG2U=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA==',VideoUrl:'' },
+  { id: 4, title: 'The Crown', posterUrl: 'https://images.squarespace-cdn.com/content/v1/5b15d26ce749408e659ba6eb/1608323718044-PIH4MCJP59WCK6ME9UVA/IMG_4527.JPG',VideoUrl:'' },
+  { id: 5, title: 'Dark', posterUrl: 'https://i.pinimg.com/736x/e6/42/e9/e642e9496e7b403f760c840dfee7a52d.jpg',VideoUrl:'' },
+  { id: 6, title: 'Ozark', posterUrl: 'https://resizing.flixster.com/3ko6zO6791p1QPOXHUI2eCwmHXQ=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvMDIyOTBmN2QtMzM0Yi00ODUxLWE0MWYtMmViYWJiOGViZjRkLmpwZw==',VideoUrl:'' },
+  { id: 7, title: 'Umbrella Academy', posterUrl: 'https://m.media-amazon.com/images/I/71+RSlRCMUS._AC_UF1000,1000_QL80_.jpg',VideoUrl:'' },
+  { id: 8, title: 'Bridgerton', posterUrl: 'https://leadership.ng/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-17-at-17.34.47.jpeg',VideoUrl:'' },
+  { id: 9, title: 'Narcos', posterUrl: 'https://m.media-amazon.com/images/I/91jkF8kLQqL._AC_UF1000,1000_QL80_.jpg',VideoUrl:'' },
+  { id: 10, title: 'The friends', posterUrl: 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg',VideoUrl:'' },
   // Add more shows here
 ];
 
@@ -20,3 +22,11 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
+
+
+
+
+
+
+
+

@@ -4,7 +4,10 @@
   color: #ffffff;
   padding: 20px;
   text-align: center;
+  position: relative;
+  bottom: 0px;
 }
+
 
 .footer__links,
 .footer__social {

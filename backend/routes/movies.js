@@ -12,7 +12,7 @@ const movies = [
   { id: 7, title: 'Enola Holmes', posterUrl: 'https://m.media-amazon.com/images/M/MV5BZjNkNzk0ZjEtM2M1ZC00MmMxLTlmOWEtNWRlZTc1ZTUyNzY4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg',videoUrl:"https://www.youtube.com/watch?v=1d0Zf9sXlHk" },
   { id: 8, title: 'Project Power', posterUrl: 'https://m.media-amazon.com/images/M/MV5BYzBhOWU4ODAtZDYzYi00NDU1LWIzZWUtNDZmMDgxODljZTVmXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg',videoUrl:"https://www.youtube.com/watch?v=xw1vQgVaYNQ" },
   { id: 9, title: 'The kissing booth', posterUrl: 'https://m.media-amazon.com/images/M/MV5BNjQ0Mzk0OTE5MF5BMl5BanBnXkFtZTgwNDkyOTI0NTM@._V1_.jpg',videoUrl:"https://www.youtube.com/watch?v=7bfS6seiLhk" },
-  { id: 1, title: 'The Amazing Spiderman', posterUrl: "https://www.algeria.ubuy.com/productimg/?image=aHR0cHM6Ly9pLmViYXlpbWcuY29tL2ltYWdlcy9nLzBUZ0FBT3h5ZWdsVFl2Qmovcy1sMTYwMC5qcGc.jpg", videoUrl: "https://www.youtube.com/watch?v=DlM2CWNTQ84" },
+  { id: 1, title: 'The Amazing Spiderman', posterUrl: "https://www.algeria.ubuy.com/productimg/?image=aHR0cHM6Ly9pLmViYXlpbWcuY29tL2ltYWdlcy9nLzBUZ0FBT3h5ZWdsVFl2Qmovcy1sMTYwMC5qcGc.jpg", videoUrl: "https://www.youtube.com/watch?v=-tnxzJ0SSOw" },
   // Add more movies here
 ];
 

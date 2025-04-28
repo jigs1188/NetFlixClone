@@ -1,6 +1,4 @@
-Here's an enhanced and professional-looking version of your README file tailored for showcasing in your resume:
 
----
 
 # 🎥 Netflix Clone
 
@@ -154,6 +152,3 @@ Contributions are welcome! Feel free to open an issue or submit a pull request f
 
 This project is licensed under the **MIT License**.
 
----
-
-This enhanced README provides a clean, professional structure and highlights key aspects of your project, making it resume-ready! Let me know if you need further refinements.

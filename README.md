@@ -1,3 +1,8 @@
+Here’s your ready-to-copy **`README.md`** content for your Netflix Clone project:
+
+---
+
+```md
 # 🎬 Netflix Clone (MERN Stack Project)
 
 A full-stack Netflix Clone built with MERN (MongoDB, Express.js, React, Node.js). Users can register, log in, browse trending movies and shows fetched dynamically from the TMDB API, watch trailers via YouTube, visualize Netflix data, and search for specific titles.
@@ -28,8 +33,22 @@ A full-stack Netflix Clone built with MERN (MongoDB, Express.js, React, Node.js)
 ---
 
 ## 📁 Project Structure
-netflix-clone/ ├── backend/ │ ├── routes/ │ ├── utils/ │ ├── models/ │ └── server.js ├── frontend/ │ └── src/ │ ├── components/ │ ├── context/ │ ├── utils/ │ ├── App.js │ └── index.js
 
+```
+netflix-clone/
+├── backend/
+│   ├── routes/
+│   ├── utils/
+│   ├── models/
+│   └── server.js
+├── frontend/
+│   └── src/
+│       ├── components/
+│       ├── context/
+│       ├── utils/
+│       ├── App.js
+│       └── index.js
+```
 
 ---
 
@@ -40,53 +59,75 @@ netflix-clone/ ├── backend/ │ ├── routes/ │ ├── utils/ │
 ```bash
 git clone https://github.com/jigs1188/NetFlixClone.git
 cd NetFlixClone
+```
 
-#🔹 Backend Setup
+### 🔹 Backend Setup
+
+```bash
 cd backend
 npm install
-
+# Create .env file with:
+# TMDB_API_KEY=your_tmdb_key
+# MONGO_URI=your_mongodb_uri
 node server.js
+```
 
-#🔹 Frontend Setup
-cd netflix-clone
+### 🔹 Frontend Setup
+
+```bash
+cd frontend
 npm install
 npm start
+```
 
-Visit: http://localhost:3000
-#📊 Visualization
-
-    Navigate to /visualization-page to explore Netflix insights
-
-    Built using real netflix_titles.csv dataset
-
-    Includes charts on type, rating, year, genre distributions
+Visit: `http://localhost:3000`
 
 ---
 
-#🔍 Search Functionality
+## 📊 Visualization
 
-    Input field in the navbar
-
-    Auto fetches Movies & Shows only (filters out cast/others)
-
-    Results displayed using TMDB API
+- Navigate to `/visualization-page` to explore Netflix insights
+- Built using real `netflix_titles.csv` dataset
+- Includes charts on type, rating, year, genre distributions
 
 ---
 
-#📸 Screenshots
+## 🔍 Search Functionality
 
-#🌐 Deployment Options
+- Input field in the navbar
+- Auto fetches Movies & Shows only (filters out cast/others)
+- Results displayed using TMDB API
 
-    Backend: Render
-
-    Frontend: Vercel or Netlify
-
-    DB: MongoDB Atlas
 ---
 
-#👤 Author
+## 📸 Screenshots
 
-Jigs Parmar
-📎 GitHub: @jigs1188
+![Home](screenshots/home.png)
+![Search](screenshots/search.png)
+![Player](screenshots/player.png)
+![Visualization](screenshots/visualization.png)
 
+---
+
+## 🌐 Deployment Options
+
+- Backend: [Render](https://render.com)
+- Frontend: [Vercel](https://vercel.com) or [Netlify](https://netlify.com)
+- DB: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+
+---
+
+## 👤 Author
+
+**Jigs Parmar**  
+📎 GitHub: [@jigs1188](https://github.com/jigs1188)
+
+---
+
+## 📄 License
+
+MIT © 2025
+```
+
+---
 

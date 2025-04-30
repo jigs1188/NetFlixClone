@@ -71,7 +71,7 @@ node server.js
 ### 🔹 Frontend Setup
 
 ```bash
-cd frontend
+cd netflix-clone
 npm install
 npm start
 ```
@@ -123,7 +123,7 @@ Visit: `http://localhost:3000`
 ## 📄 License
 
 MIT © 2025
-```
+
 
 ---
 

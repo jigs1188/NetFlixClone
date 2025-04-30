@@ -1,3 +1,5 @@
+// path: NetFlixClone/backend/server.js
+
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
@@ -16,5 +18,5 @@ app.use('/api/movies', movieRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/shows', showRoutes);
 
-// const PORT = process.env.PORT || 5000;
-// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

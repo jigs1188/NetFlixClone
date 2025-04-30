@@ -11,6 +11,11 @@ import Visualization from './components/Visualization';
 import VisualizationPage from './components/VisualizationPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SearchPage from './components/SearchPage';
+
+
+
+
 
 const AppLayout = ({ children }) => (
   <div>
@@ -33,6 +38,9 @@ const App = () => {
             <Route path="/visualization" element={<Visualization />} />
             <Route path="/visualization-page" element={<VisualizationPage />} />
             <Route path="/" element={<Home />} />
+            <Route path="/search" element={<SearchPage />} />
+            
+            
           </Routes>
         </AppLayout>
       </Router>

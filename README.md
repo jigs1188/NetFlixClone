@@ -111,6 +111,8 @@ Visit: `http://localhost:3000`
 - Frontend: [Vercel](https://vercel.com) or [Netlify](https://netlify.com)
 - DB: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
+- Live:[link](https://net-flix-clone-1t477722k-jigneshs-projects-25e43af9.vercel.app/)
+
 ---
 
 ## 👤 Author

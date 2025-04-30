@@ -21,3 +21,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+REACT_APP_API_URL=https://netflixclone-e29v.onrender.com/api

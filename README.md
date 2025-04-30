@@ -1,8 +1,4 @@
-Here’s your ready-to-copy **`README.md`** content for your Netflix Clone project:
 
----
-
-```md
 # 🎬 Netflix Clone (MERN Stack Project)
 
 A full-stack Netflix Clone built with MERN (MongoDB, Express.js, React, Node.js). Users can register, log in, browse trending movies and shows fetched dynamically from the TMDB API, watch trailers via YouTube, visualize Netflix data, and search for specific titles.

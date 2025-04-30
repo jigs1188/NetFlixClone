@@ -33,8 +33,8 @@ const Home = () => {
     <div className="home">
       <div className="home__content">
         {movies.length > 0 && <MovieRow title="Popular Movies" items={movies} />}
-        {shows.length > 0 && <MovieRow title="TV Shows" items={shows} />}
         {topRated.length > 0 && <MovieRow title="Top Rated Movies" items={topRated} />}
+        {shows.length > 0 && <MovieRow title="TV Shows" items={shows} />}
       </div>
     </div>
   );

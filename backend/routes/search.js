@@ -1,4 +1,3 @@
-// backend/routes/search.js
 const express = require('express');
 const axios = require('axios');
 const router = express.Router();
@@ -19,28 +18,46 @@ router.get('/', async (req, res) => {
       }),
     ]);
 
-    const movieResults = movieRes.data.results.map(item => ({
-      id: item.id,
-      type: 'Movie',
-      title: item.title,
-      posterUrl: item.poster_path
-        ? `https://image.tmdb.org/t/p/w500${item.poster_path}`
-        : null,
-      videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    }));
+    const results = await Promise.all(
+      [...movieRes.data.results, ...tvRes.data.results].map(async (item) => {
+        const isMovie = item.title !== undefined;
+        const mediaType = isMovie ? 'movie' : 'tv';
+        const title = isMovie ? item.title : item.name;
+        const posterUrl = item.poster_path
+          ? `https://image.tmdb.org/t/p/w500${item.poster_path}`
+          : null;
 
-    const tvResults = tvRes.data.results.map(item => ({
-      id: item.id,
-      type: 'TV Show',
-      title: item.name,
-      posterUrl: item.poster_path
-        ? `https://image.tmdb.org/t/p/w500${item.poster_path}`
-        : null,
-      videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    }));
+        let videoUrl = '';
 
-    res.json([...movieResults, ...tvResults]);
+        try {
+          const videoRes = await axios.get(`https://api.themoviedb.org/3/${mediaType}/${item.id}/videos`, {
+            params: { api_key: TMDB_API_KEY }
+          });
+
+          const trailer = videoRes.data.results.find(
+            (v) => v.type === 'Trailer' && v.site === 'YouTube'
+          );
+
+          if (trailer) {
+            videoUrl = `https://www.youtube.com/watch?v=${trailer.key}`;
+          }
+        } catch (err) {
+          console.warn(`Trailer not found for ${title}`);
+        }
+
+        return {
+          id: item.id,
+          type: isMovie ? 'Movie' : 'TV Show',
+          title,
+          posterUrl,
+          videoUrl,
+        };
+      })
+    );
+
+    res.json(results);
   } catch (err) {
+    console.error('Search failed:', err.message);
     res.status(500).json({ error: 'Search failed' });
   }
 });

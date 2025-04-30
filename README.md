@@ -1,154 +1,92 @@
+# 🎬 Netflix Clone (MERN Stack Project)
 
-
-# 🎥 Netflix Clone
-
-A Netflix-inspired web application featuring a **React-based frontend** and an **Express/MongoDB backend**. This project includes user authentication, browsing movies/TV shows, and streaming functionality. 🚀
+A full-stack Netflix Clone built with MERN (MongoDB, Express.js, React, Node.js). Users can register, log in, browse trending movies and shows fetched dynamically from the TMDB API, watch trailers via YouTube, visualize Netflix data, and search for specific titles.
 
 ---
 
-## 🗂️ Table of Contents
-- [Project Overview](#project-overview)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-- [API Documentation](#api-documentation)
-- [Environment Variables](#environment-variables)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
+## 🚀 Features
+
+- 🔐 User Authentication (Register/Login/Logout)
+- 🎞️ Browse trending Movies & TV Shows (via TMDB API)
+- ▶️ Play trailers (YouTube embeds)
+- 📊 Netflix Data Visualization (Pie, Bar, Line charts)
+- 🔍 Search functionality for movies/shows only
+- 🧑 User Profile page
+- 🧼 Fully responsive design
 
 ---
 
-## 📖 Project Overview
+## 🧱 Tech Stack
 
-This project replicates core functionalities of Netflix, including:
-- User registration and login using **JWT**.
-- Displaying curated lists of movies and TV shows.
-- Secure streaming functionality with a responsive design.
-- Backend API for data management and user authentication.
-
----
-
-## 💻 Tech Stack
-
-### Frontend
-- **React**
-- **React Router**
-- **Axios**
-- **CSS**
-
-### Backend
-- **Node.js**
-- **Express.js**
-- **MongoDB**
-- **Mongoose**
-- **JWT** (JSON Web Token)
-- **bcryptjs**
+- **Frontend:** React, React Router, Axios, Chart.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose)
+- **Authentication:** JWT & Context API
+- **API Integration:** TMDB API
+- **Visualization:** Chart.js, real Netflix CSV dataset
 
 ---
 
-## ✨ Features
-- **Authentication:** User sign-up, login, and secure sessions using JWT.
-- **Movie/TV Browsing:** Dynamic display of movies and TV shows fetched from a backend API.
-- **Responsive Design:** Optimized for mobile and desktop views.
-- **Streaming:** In-app video streaming with a custom video player.
+## 📁 Project Structure
+netflix-clone/ ├── backend/ │ ├── routes/ │ ├── utils/ │ ├── models/ │ └── server.js ├── frontend/ │ └── src/ │ ├── components/ │ ├── context/ │ ├── utils/ │ ├── App.js │ └── index.js
+
 
 ---
 
-## 🚀 Getting Started
+## 🔧 Getting Started
 
-### Backend Setup
-1. Navigate to the `backend` directory:
-   ```bash
-   cd netflix/backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start MongoDB server (local or MongoDB Atlas).
-4. Run the backend server:
-   ```bash
-   node server.js
-   ```
+### 🔹 Clone the repo
 
-### Frontend Setup
-1. Navigate to the `netflix-clone` directory:
-   ```bash
-   cd netflix/netflix-clone
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm start
-   ```
+```bash
+git clone https://github.com/jigs1188/NetFlixClone.git
+cd NetFlixClone
 
-- Frontend: `http://localhost:3000`
-- Backend: `http://localhost:5000`
+#🔹 Backend Setup
+cd backend
+npm install
+
+node server.js
+
+#🔹 Frontend Setup
+cd netflix-clone
+npm install
+npm start
+
+Visit: http://localhost:3000
+#📊 Visualization
+
+    Navigate to /visualization-page to explore Netflix insights
+
+    Built using real netflix_titles.csv dataset
+
+    Includes charts on type, rating, year, genre distributions
 
 ---
 
-## 📑 API Documentation
+#🔍 Search Functionality
 
-### Authentication
-- **Register:** `POST /api/auth/register`
-- **Login:** `POST /api/auth/login`
-- **Get User Info:** `GET /api/auth/user`
+    Input field in the navbar
 
-### Movies
-- **Get Movies:** `GET /api/movies`
+    Auto fetches Movies & Shows only (filters out cast/others)
 
-### TV Series
-- **Get TV Show:** `GET /api/tv-series`
+    Results displayed using TMDB API
 
 ---
 
-## 🔑 Environment Variables
+#📸 Screenshots
 
-Create a `.env` file in the `backend` directory:
-```env
-MONGO_URI=mongodb://localhost:27017/netflix-clone
-JWT_SECRET=yourSecretKey
-```
+#🌐 Deployment Options
 
+    Backend: Render
+
+    Frontend: Vercel or Netlify
+
+    DB: MongoDB Atlas
 ---
 
-## 📂 Folder Structure
+#👤 Author
 
-```
-netflix/
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── server.js
-│   └── ...
-├── netflix-clone/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── utils/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── ...
-└── ...
-```
+Jigs Parmar
+📎 GitHub: @jigs1188
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request for any improvements or new features.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
 

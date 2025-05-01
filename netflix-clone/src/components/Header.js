@@ -3,6 +3,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import './Header.css';
+import logo from '../assets/netflix-logo.png'; // Move image to /src/assets/ and rename
 
 const Header = () => {
   const { state, dispatch } = useContext(AuthContext);
@@ -34,11 +35,23 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Netflix</div>
+      <Link to="/" className="logo-link">
+        <img src={logo} alt="Netflix" className="logo-img" />
+      </Link>
+
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/visualization-page">Visualization</Link></li>
+          <li><Link to="/" className='home'>Home</Link></li>
+          <li><Link to="/visualization-page" className='visualization'>Visualization</Link></li>
+          <form className="search-bar" onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder="Search movies/shows..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        {/* <button type="submit">Search</button> */}
+      </form>
           {state.isAuthenticated ? (
             <>
               <li><Link to="/profile">Profile</Link></li>
@@ -46,21 +59,15 @@ const Header = () => {
             </>
           ) : (
             <>
-              <li><Link to="/login">Login</Link></li>
-              <li><Link to="/register">Register</Link></li>
+              <li><Link to="/register" className="join">Join now</Link></li>
+              <li><Link to="/login" className="sign-in">Sign in</Link></li>
             </>
           )}
         </ul>
       </nav>
-      <form className="search-bar" onSubmit={handleSearch}>
-        <input
-          type="text"
-          placeholder="Search movies/shows..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <button type="submit">🔍</button>
-      </form>
+
+      
+
       {showMessage && <div className="message-popup">{state.message}</div>}
     </header>
   );

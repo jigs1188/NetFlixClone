@@ -41,11 +41,7 @@ const Visualization = () => {
     return acc;
   }, {});
 
-  const countryCount = data.reduce((acc, item) => {
-    acc[item.country] = (acc[item.country] || 0) + 1;
-    return acc;
-  }, {});
-
+ 
   const barData = {
     labels: Object.keys(typeCount),
     datasets: [

@@ -84,7 +84,7 @@ const Visualization = () => {
 
   return (
     <div className="visualization">
-      <h2>Netflix Data Visualization</h2>
+      <h2>Movies Data Visualization</h2>
       <div className="chart-container">
         <h3>Count by Type</h3>
         <Bar data={barData} />

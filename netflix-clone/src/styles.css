@@ -5,7 +5,7 @@
   max-width: 400px;
   margin: 100px auto;
   padding: 20px;
-  background-color: #333;
+  background-color: #050A30;
   border-radius: 5px;
 }
 
@@ -20,13 +20,13 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #e50914;
+  background-color: #0000FF;
   color: #fff;
   cursor: pointer;
 }
 
 .auth-form button:hover {
-  background-color: #f40612;
+  background-color: #0000FF;
 }
 
 .home, .browse, .video-player {
@@ -42,7 +42,7 @@
   width: 200px;
   margin: 10px;
   padding: 10px;
-  background-color: #333;
+  background-color: #050A30;
   border-radius: 5px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .movie-item a {
-  color: #e50914;
+  color: #0000FF;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #141414;
+  background-color: #7EC8E3;
   color: #fff;
 }
 

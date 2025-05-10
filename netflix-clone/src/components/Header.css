@@ -2,10 +2,11 @@
 
 .header {
   display: flex;
+  width: auto  ;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #141414;
+  background-color: #050A30;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -75,7 +76,7 @@
 
 .join {
   color: #fff !important;
-  background-color: #e50914 !important;
+  background-color: #000C66 !important;
   border: none;
   padding: 10px 20px;
   border-radius: 0px;
@@ -84,7 +85,7 @@
 }
 
 .join:hover {
-  background-color: #f40612 !important;
+  background-color: #000C66 !important;
 }
 
 .message-popup {
@@ -101,7 +102,7 @@
 }
 
 .logo-img {
-  height: 100px;
+  height: 150px;
   margin-right: 1rem;
 }
 
@@ -109,4 +110,34 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .search-bar input {
+    flex-grow: 1;
+    min-width: 60%;
+  }
 }

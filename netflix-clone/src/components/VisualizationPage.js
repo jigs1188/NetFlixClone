@@ -120,7 +120,7 @@ const VisualizationPage = () => {
 
   return (
     <div className="visualization-page">
-      <h2>Netflix Data Visualizations</h2>
+      <h2>Movies Data Visualizations</h2>
       <div className="chart-container">
         <h3>Type Distribution</h3>
         {data.type_counts && <Doughnut data={typeData} options={chartOptions} />}

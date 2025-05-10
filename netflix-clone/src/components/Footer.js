@@ -16,7 +16,7 @@ const Footer = () => {
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
       <div className="footer__copyright">
-        © 2024 Netflix Clone. All rights reserved.
+        © 2024 MYFAV Movies and Shows. All rights reserved.
       </div>
     </footer>
   );

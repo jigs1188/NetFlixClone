@@ -3,7 +3,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import './Header.css';
-import logo from '../assets/netflix-logo.png'; // Move image to /src/assets/ and rename
+import logo from '../assets/MYFAV.png'; // Move image to /src/assets/ and rename
 
 const Header = () => {
   const { state, dispatch } = useContext(AuthContext);
@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link to="/" className="logo-link">
-        <img src={logo} alt="Netflix" className="logo-img" />
+        <img src={logo} alt="MyFAV" className="logo-img" />
       </Link>
 
       <nav>
